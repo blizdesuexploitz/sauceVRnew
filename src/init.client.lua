@@ -1,9 +1,9 @@
 -- Main
--- saucekid
--- December 4, 2022
+-- blizdesuexploitz/saucekid
+-- May 6, 2026
 
-if (not isfolder("sauceVR")) then
-    makefolder("sauceVR")
+if (not isfolder("sauceVRnew")) then
+    makefolder("sauceVRnew")
 end
 
 
@@ -12,7 +12,7 @@ getgenv().ControlService = require(script.Components.Services.ControlService)
 getgenv().VRInputService = require(script.Components.Services.VRInputService)
 getgenv().DefaultCursorService = require(script.Components.Services.DefaultCursorService)
 
-getgenv().sauceVREvent = Instance.new("BindableEvent")
+getgenv().sauceVRnewEvent = Instance.new("BindableEvent")
 
 
 local Init = require(script.Main)

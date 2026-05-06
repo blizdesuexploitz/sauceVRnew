@@ -10,14 +10,14 @@
 ## ALL CREDIT FOR SAUCEKID BTW HE MADE ORIGINAL!
 ## Install
 
-To install sauceVR for your script executor, save the `package.lua` file located in this repository to your `scripts/` folder.
+To install sauceVRnew for your script executor, save the `package.lua` file located in this repository to your `scripts/` folder.
 
 
 You can also use the loadstring:
 
 ```lua
 loadstring(
-	game:HttpGetAsync("https://raw.githubusercontent.com/saucekid/sauceVR/main/package.lua")
+	game:HttpGetAsync("https://raw.githubusercontent.com/blizdesuexploitz/sauceVRnew/main/package.lua")
 )()
 ```
 
@@ -31,7 +31,7 @@ All options are configurable in the UI
 
 `Right Thumbstick Forward` ▶︎ *Jump* 
 
-**(To open menu, rotate both your hands towards the floor)**
+**(To open menu, rotate both your hands towards the floor and also rotate them like 90+ degrees on the x axis.)**
 
 ## Credits
 `TheNexusAvenger` - [NexusVR](https://github.com/TheNexusAvenger/Nexus-VR-Character-Model)

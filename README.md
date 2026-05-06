@@ -7,7 +7,7 @@
 </div>
 
 
-## ALL CREDIT FOR SAUCEKID BTW HE MADE ORIGINAL!
+## ALL CREDIT FOR SAUCEKID BTW THEY MADE ORIGINAL SAUCEVR!!
 ## Install
 
 To install sauceVRnew for your script executor, save the `package.lua` file located in this repository to your `scripts/` folder.

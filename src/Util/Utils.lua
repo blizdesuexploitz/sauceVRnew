@@ -1,6 +1,6 @@
 local Utils = {}
 
-local sauceVR = script:FindFirstAncestor("sauceVR")
+local sauceVRnew = script:FindFirstAncestor("sauceVRnew")
 
 local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
@@ -239,7 +239,7 @@ function Utils:loadingScreen(sec)
     local first = tick()
     local oldFogEnd, oldFogColor, oldClockTime = Lighting.FogEnd, Lighting.FogColor, Lighting.ClockTime
 
-    local logoPart = sauceVR.Assets.Logo:Clone()
+    local logoPart = sauceVRnew.Assets.Logo:Clone()
     logoPart.Parent = workspace.CurrentCamera
     logoPart.CFrame =  (workspace.CurrentCamera.CFrame * CFrame.Angles(0,math.rad(180),0)) * CFrame.new(0,0,9)
 

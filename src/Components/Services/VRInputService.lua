@@ -88,13 +88,13 @@ end
 function VRInputService:Recenter()
     local HeadCFrame = self.VRService:GetUserCFrame(Enum.UserCFrame.Head)
     self.RecenterOffset = CFrame.Angles(0,-math.atan2(-HeadCFrame.LookVector.X,-HeadCFrame.LookVector.Z),0) * CFrame.new(-HeadCFrame.X,0,-HeadCFrame.Z)
-    sauceVREvent:Fire("Recenter")
+    sauceVRnewEvent:Fire("Recenter")
 end
 
 
 function VRInputService:SetEyeLevel()
     self.ManualNormalHeadLevel = self.VRService:GetUserCFrame(Enum.UserCFrame.Head).Y
-    sauceVREvent:Fire("EyeLevel")
+    sauceVRnewEvent:Fire("EyeLevel")
 end
 
 

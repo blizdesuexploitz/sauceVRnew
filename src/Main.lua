@@ -1,4 +1,4 @@
-local sauceVR = script:FindFirstAncestor("sauceVR")
+local sauceVRnew = script:FindFirstAncestor("sauceVRnew")
 
 local Players = game:GetService("Players")  
 local RunService = game:GetService("RunService")
@@ -11,11 +11,11 @@ local StarterGui = game:GetService("StarterGui")
 local CurrentCamera = workspace.CurrentCamera
 local LocalPlayer = Players.LocalPlayer
 
-local Library = require(sauceVR.Components.UI.VRLibrary)
-local Keyboard = require( sauceVR.Components.UI.Keyboard)
+local Library = require(sauceVRnew.Components.UI.VRLibrary)
+local Keyboard = require( sauceVRnew.Components.UI.Keyboard)
 
-local Event = require(sauceVR.Util.Event)
-local Utils = require(sauceVR.Util.Utils)
+local Event = require(sauceVRnew.Util.Event)
+local Utils = require(sauceVRnew.Util.Utils)
 
 local VRReady = UserInputService.VREnabled
 local diedFunc
@@ -98,7 +98,7 @@ end)
 
 
 --[[
-Load sauceVR.
+Load sauceVRnew.
 --]]
 function Init()
     --Set up Character.
@@ -262,7 +262,7 @@ function Init()
         
         --Update VR Character
         local VirtualCharacter do
-            VirtualCharacter = require(sauceVR.Components.Character.Character).new(VRCharacter)
+            VirtualCharacter = require(sauceVRnew.Components.Character.Character).new(VRCharacter)
             VirtualCharacter.Humanoid = Humanoid
             VirtualCharacter.Parts.HumanoidRootPart = Humanoid.RootPart
 
@@ -282,7 +282,7 @@ function Init()
             CameraService:SetActiveCamera(options.DefaultCameraOption)
 
             
-            RunService:BindToRenderStep("sauceVRCharacterModelUpdate",Enum.RenderPriority.Camera.Value - 1,function()
+            RunService:BindToRenderStep("sauceVRnewCharacterModelUpdate",Enum.RenderPriority.Camera.Value - 1,function()
                 ControlService:UpdateCharacter()
                 RHA.WorldCFrame = VRCharacter["RightHand"].CFrame 
                 LHA.WorldCFrame = VRCharacter["LeftHand"].CFrame
@@ -292,7 +292,7 @@ function Init()
         Humanoid.RootPart.Anchored = false
 
         --Replicate parts.
-        local Netless = require(sauceVR.Util.Netless)
+        local Netless = require(sauceVRnew.Util.Netless)
 
         local disabledParts, R6Parts = {
             ["HumanoidRootPart"] = true,
@@ -760,7 +760,7 @@ function Init()
         diedFunc = function()
             diedFunc = nil
 
-            RunService:UnbindFromRenderStep("sauceVRCharacterModelUpdate")
+            RunService:UnbindFromRenderStep("sauceVRnewCharacterModelUpdate")
 
             Character:BreakJoints()
 
@@ -963,7 +963,7 @@ function Init()
     end
 
     --Load Huds.
-    local viewHUD, chatHUD = require(sauceVR.Components.UI.HUDs.Viewport), require(sauceVR.Components.UI.HUDs.Chat)
+    local viewHUD, chatHUD = require(sauceVRnew.Components.UI.HUDs.Viewport), require(sauceVRnew.Components.UI.HUDs.Chat)
 
     task.spawn(viewHUD)
     task.spawn(chatHUD)

@@ -5,9 +5,9 @@ local THUMBSTICK_MANUAL_ROTATION_ANGLE = math.rad(22.5)
 local Workspace = game:GetService("Workspace")
 local UserInputService = game:GetService("UserInputService")
 
-local sauceVR = script:FindFirstAncestor("sauceVR")
-local ArcWithBeacon = require(sauceVR.Components.Cameras.Visual.ArcWithBeacon)
-local BaseController = require(sauceVR.Components.Controllers.BaseController)
+local sauceVRnew = script:FindFirstAncestor("sauceVRnew")
+local ArcWithBeacon = require(sauceVRnew.Components.Cameras.Visual.ArcWithBeacon)
+local BaseController = require(sauceVRnew.Components.Controllers.BaseController)
 
 local TeleportController = {}
 TeleportController.Connections = {}

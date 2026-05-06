@@ -1,11 +1,11 @@
 local Players = game:GetService("Players")
 local TweenService = game:GetService("TweenService")
 
-local sauceVR = script:FindFirstAncestor("sauceVR")
-local Head = require(sauceVR.Components.Character.Head)
-local Torso = require(sauceVR.Components.Character.Torso)
-local Appendage = require(sauceVR.Components.Character.Appendage)
-local FootPlanter = require(sauceVR.Components.Character.FootPlanting)
+local sauceVRnew = script:FindFirstAncestor("sauceVRnew")
+local Head = require(sauceVRnew.Components.Character.Head)
+local Torso = require(sauceVRnew.Components.Character.Torso)
+local Appendage = require(sauceVRnew.Components.Character.Appendage)
+local FootPlanter = require(sauceVRnew.Components.Character.FootPlanting)
 
 local char = {}
 

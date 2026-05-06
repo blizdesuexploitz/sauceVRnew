@@ -3,8 +3,8 @@
     edited from MW Reanimate
 --]]
 
-local sauceVR = script:FindFirstAncestor("sauceVR")
-local Utils = require(sauceVR.Util.Utils)
+local sauceVRnew = script:FindFirstAncestor("sauceVRnew")
+local Utils = require(sauceVRnew.Util.Utils)
 
 local lp = game:GetService("Players").LocalPlayer
 local rs, ws, sg = game:GetService("RunService"), game:GetService("Workspace"), game:GetService("StarterGui")

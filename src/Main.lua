@@ -24,7 +24,7 @@ local propMenu
 getgenv().options = {
     HeadMovement = true,
     Inventory = "Bodyslots" ,
-    DefaultMovementMethod = "SmoothLocomotion",
+    DefaultMovementMethod = "GorillaLocomotion",
     DefaultCameraOption = "Default",
 
     LocalCharacterTransparency = 0.5,
@@ -53,9 +53,6 @@ DefaultCursorService:SetCursorState("Detect")
 
 --Enable bubble chat if disabled.
 game.Chat.BubbleChatEnabled = true
-
---.Chatted fix by Stefanuk12
-require(sauceVR.Util.FixChatted)
 
 --Bypass any bodymover checks.
 for i, connection in pairs(getconnections(game.ChildAdded)) do

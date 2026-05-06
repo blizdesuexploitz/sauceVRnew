@@ -1,4 +1,4 @@
-local sauceVR = script:FindFirstAncestor("sauceVR")
+local sauceVRnew = script:FindFirstAncestor("sauceVRnew")
 
 local Players = game:GetService("Players")
 local SoundService = game:GetService("SoundService")
@@ -9,13 +9,13 @@ local TweenService = game:GetService("TweenService")
 local LocalPlayer = Players.LocalPlayer
 local Camera = workspace.CurrentCamera
 
-local buttonTemplatePart = sauceVR.Assets.Button
-local menuTemplate = sauceVR.Assets.Menu
-local promptTemplatePart = sauceVR.Assets.Prompt
-local tipTemplatePart = sauceVR.Assets.Tooltip
-local propMenu = sauceVR.Assets.PropMenu
+local buttonTemplatePart = sauceVRnew.Assets.Button
+local menuTemplate = sauceVRnew.Assets.Menu
+local promptTemplatePart = sauceVRnew.Assets.Prompt
+local tipTemplatePart = sauceVRnew.Assets.Tooltip
+local propMenu = sauceVRnew.Assets.PropMenu
 
-local Terpy = require(sauceVR.Util.Terpy)
+local Terpy = require(sauceVRnew.Util.Terpy)
 
 
 

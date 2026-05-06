@@ -1,6 +1,6 @@
-local sauceVR = script:FindFirstAncestor("sauceVR")
-local Arc = require(sauceVR.Components.Cameras.Visual.Arc)
-local Beacon = require(sauceVR.Components.Cameras.Visual.Beacon)
+local sauceVRnew = script:FindFirstAncestor("sauceVRnew")
+local Arc = require(sauceVRnew.Components.Cameras.Visual.Arc)
+local Beacon = require(sauceVRnew.Components.Cameras.Visual.Beacon)
 
 local ArcWithBeaconModule = {}
 

@@ -6,8 +6,8 @@ local V3new = Vector3.new
 local rad,atan2,acos = math.rad,math.atan2,math.acos
 local min,max,abs,log = math.min,math.max,math.abs,math.log
 
-local sauceVR = script:FindFirstAncestor("sauceVR")
-local Utils = require(sauceVR.Util.Utils)
+local sauceVRnew = script:FindFirstAncestor("sauceVRnew")
+local Utils = require(sauceVRnew.Util.Utils)
 
 function FootPlanter:CreateSolver(CenterPart,ScaleValue)
 	--Heavily modified code from Stravant

@@ -1,6 +1,6 @@
-local sauceVR = script:FindFirstAncestor("sauceVR")
+local sauceVRnew = script:FindFirstAncestor("sauceVRnew")
 
-local Utils = require(sauceVR.Util.Utils)
+local Utils = require(sauceVRnew.Util.Utils)
 
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
@@ -32,7 +32,7 @@ end
 
 
 function Keyboard:Init()
-    self.Model = sauceVR.Assets.Keyboard:Clone()
+    self.Model = sauceVRnew.Assets.Keyboard:Clone()
     self.Model.Parent = ReplicatedStorage
 
     local SelectionBox = Instance.new("Highlight", workspace.Terrain)

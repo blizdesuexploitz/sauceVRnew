@@ -1,7 +1,7 @@
-local sauceVR = script:FindFirstAncestor("sauceVR")
-local DefaultCamera = require(sauceVR.Components.Cameras.Default)
-local ThirdPersonTrackCamera = require(sauceVR.Components.Cameras.ThirdPerson)
-local MirrorCamera = require(sauceVR.Components.Cameras.Mirror)
+local sauceVRnew = script:FindFirstAncestor("sauceVRnew")
+local DefaultCamera = require(sauceVRnew.Components.Cameras.Default)
+local ThirdPersonTrackCamera = require(sauceVRnew.Components.Cameras.ThirdPerson)
+local MirrorCamera = require(sauceVRnew.Components.Cameras.Mirror)
 
 local CameraService = {}
 CameraService.RegisteredCameras = {}

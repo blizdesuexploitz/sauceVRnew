@@ -9,8 +9,8 @@ local POINTER_PARABOLA_HEIGHT_MULTIPLIER = -0.2
 local Workspace = game:GetService("Workspace")
 local Players = game:GetService("Players")
 
-local sauceVR = script:FindFirstAncestor("sauceVR")
-local Utils = require(sauceVR.Util.Utils)
+local sauceVRnew = script:FindFirstAncestor("sauceVRnew")
+local Utils = require(sauceVRnew.Util.Utils)
 
 local ArcModule = {}
 

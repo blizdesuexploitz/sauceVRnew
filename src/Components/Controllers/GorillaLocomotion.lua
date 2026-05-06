@@ -10,9 +10,9 @@ local RunService = game:GetService("RunService")
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
 
-local sauceVR = script:FindFirstAncestor("sauceVR")
-local BaseController = require(sauceVR.Components.Controllers.BaseController)
-local Utils = require(sauceVR.Util.Utils)
+local sauceVRnew = script:FindFirstAncestor("sauceVRnew")
+local BaseController = require(sauceVRnew.Components.Controllers.BaseController)
+local Utils = require(sauceVRnew.Util.Utils)
 
 local GorillaLocomotionController = {}
 GorillaLocomotionController.super = BaseController

@@ -7,6 +7,7 @@
 </div>
 
 
+## ALL CREDIT FOR SAUCEKID BTW HE MADE ORIGINAL!
 ## Install
 
 To install sauceVR for your script executor, save the `package.lua` file located in this repository to your `scripts/` folder.

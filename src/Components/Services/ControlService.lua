@@ -1,8 +1,8 @@
-local sauceVR = script:FindFirstAncestor("sauceVR")
-local BaseController = require(sauceVR.Components.Controllers.BaseController)
-local SmoothLocomotionController = require(sauceVR.Components.Controllers.SmoothLocomotion)
-local TeleportController = require(sauceVR.Components.Controllers.TeleportController)
-local GorillaLocomotionController = require(sauceVR.Components.Controllers.GorillaLocomotion)
+local sauceVRnew = script:FindFirstAncestor("sauceVRnew")
+local BaseController = require(sauceVRnew.Components.Controllers.BaseController)
+local SmoothLocomotionController = require(sauceVRnew.Components.Controllers.SmoothLocomotion)
+local TeleportController = require(sauceVRnew.Components.Controllers.TeleportController)
+local GorillaLocomotionController = require(sauceVRnew.Components.Controllers.GorillaLocomotion)
 
 local ControlService = {}
 ControlService.RegisteredControllers = {}
